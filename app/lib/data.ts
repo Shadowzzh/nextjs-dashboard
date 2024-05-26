@@ -153,6 +153,7 @@ export async function fetchInvoicesPages(query: string) {
   }
 }
 
+/** 获取客户列表 */
 export async function fetchCustomers() {
   try {
     const data = await sql<CustomerField>`
