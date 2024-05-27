@@ -2,6 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@heroicons/react': ^2.0.18
+  '@ianvs/prettier-plugin-sort-imports': ^4.2.1
+  '@next/eslint-plugin-next': ^14.2.3
   '@tailwindcss/forms': ^0.5.7
   '@types/bcrypt': ^5.0.1
   '@types/node': 20.5.7
@@ -17,6 +19,7 @@ specifiers:
   eslint: ^8.52.0
   eslint-config-next: ^14.0.0
   eslint-config-prettier: 9.0.0
+  eslint-plugin-react-hooks: ^4.6.2
   lucide-react: ^0.379.0
   next: ^14.0.2
   next-auth: 5.0.0-beta.18
@@ -55,16 +58,19 @@ dependencies:
   zod: 3.23.8
 
 devDependencies:
+  '@ianvs/prettier-plugin-sort-imports': 4.2.1_prettier@3.2.5
+  '@next/eslint-plugin-next': 14.2.3
   '@types/bcrypt': 5.0.2
   '@types/react': 18.2.21
   '@types/react-dom': 18.2.14
-  '@vercel/style-guide': 5.2.0_rbzztmuz3ddatxx42f2wmayhwi
+  '@vercel/style-guide': 5.2.0_siflznn3hxviuuweu2xtrfqfpe
   dotenv: 16.4.5
   eslint: 8.57.0
   eslint-config-next: 14.2.3_tkgwkzwsxjao6wo7wniqanc4sm
   eslint-config-prettier: 9.0.0_eslint@8.57.0
+  eslint-plugin-react-hooks: 4.6.2_eslint@8.57.0
   prettier: 3.2.5
-  prettier-plugin-tailwindcss: 0.5.4_prettier@3.2.5
+  prettier-plugin-tailwindcss: 0.5.4_7hsgh2q73c6n6bwzc4dtrbn3mq
 
 packages:
 
@@ -379,6 +385,26 @@ packages:
 
   /@humanwhocodes/object-schema/2.0.3:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
+    dev: true
+
+  /@ianvs/prettier-plugin-sort-imports/4.2.1_prettier@3.2.5:
+    resolution: {integrity: sha512-NKN1LVFWUDGDGr3vt+6Ey3qPeN/163uR1pOPAlkWpgvAqgxQ6kSdUf1F0it8aHUtKRUzEGcK38Wxd07O61d7+Q==}
+    peerDependencies:
+      '@vue/compiler-sfc': 2.7.x || 3.x
+      prettier: 2 || 3
+    peerDependenciesMeta:
+      '@vue/compiler-sfc':
+        optional: true
+    dependencies:
+      '@babel/core': 7.24.5
+      '@babel/generator': 7.24.5
+      '@babel/parser': 7.24.5
+      '@babel/traverse': 7.24.5
+      '@babel/types': 7.24.5
+      prettier: 3.2.5
+      semver: 7.6.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@isaacs/cliui/8.0.2:
@@ -943,7 +969,7 @@ packages:
       ws: 8.14.2_nn4cfacdngcg7bs47xs3zpla7u
     dev: false
 
-  /@vercel/style-guide/5.2.0_rbzztmuz3ddatxx42f2wmayhwi:
+  /@vercel/style-guide/5.2.0_siflznn3hxviuuweu2xtrfqfpe:
     resolution: {integrity: sha512-fNSKEaZvSkiBoF6XEefs8CcgAV9K9e+MbcsDZjUsktHycKdA0jvjAzQi1W/FzLS+Nr5zZ6oejCwq/97dHUKe0g==}
     engines: {node: '>=16'}
     peerDependencies:
@@ -963,6 +989,7 @@ packages:
     dependencies:
       '@babel/core': 7.24.5
       '@babel/eslint-parser': 7.24.5_pyj3dhrjzfsyuki5z2xrq4ay7y
+      '@next/eslint-plugin-next': 14.2.3
       '@rushstack/eslint-patch': 1.10.3
       '@typescript-eslint/eslint-plugin': 6.21.0_spqud3uwpir4pa6g2wtfebmtei
       '@typescript-eslint/parser': 6.21.0_tkgwkzwsxjao6wo7wniqanc4sm
@@ -2473,6 +2500,7 @@ packages:
 
   /glob/7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -3587,7 +3615,7 @@ packages:
       synckit: 0.9.0
     dev: true
 
-  /prettier-plugin-tailwindcss/0.5.4_prettier@3.2.5:
+  /prettier-plugin-tailwindcss/0.5.4_7hsgh2q73c6n6bwzc4dtrbn3mq:
     resolution: {integrity: sha512-QZzzB1bID6qPsKHTeA9qPo1APmmxfFrA5DD3LQ+vbTmAnY40eJI7t9Q1ocqel2EKMWNPLJqdTDWZj1hKYgqSgg==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
@@ -3639,6 +3667,7 @@ packages:
       prettier-plugin-twig-melody:
         optional: true
     dependencies:
+      '@ianvs/prettier-plugin-sort-imports': 4.2.1_prettier@3.2.5
       prettier: 3.2.5
     dev: true
 
