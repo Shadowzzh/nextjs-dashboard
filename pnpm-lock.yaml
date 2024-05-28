@@ -22,6 +22,7 @@ specifiers:
   eslint-config-next: ^14.0.0
   eslint-config-prettier: 9.0.0
   eslint-plugin-react-hooks: ^4.6.2
+  framer-motion: ^11.2.6
   lucide-react: ^0.379.0
   next: ^14.0.2
   next-auth: 5.0.0-beta.18
@@ -48,6 +49,7 @@ dependencies:
   bcrypt: 5.1.1
   class-variance-authority: 0.7.0
   clsx: 2.1.1
+  framer-motion: 11.2.6_biqbaboplfbrettd7655fr4n2y
   lucide-react: 0.379.0_react@18.2.0
   next: 14.2.3_biqbaboplfbrettd7655fr4n2y
   next-auth: 5.0.0-beta.18_next@14.2.3+react@18.2.0
@@ -2502,6 +2504,25 @@ packages:
 
   /fraction.js/4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
+    dev: false
+
+  /framer-motion/11.2.6_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-XUrjjBt57e5YoHQtjwc3eNchFBuHvIgN/cS8SC4oIaAn2J/0+bLanUxXizidJKZVeHJam/JrmMnPRjYMglVn5g==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0
+      react-dom: ^18.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      tslib: 2.6.2
     dev: false
 
   /fs-minipass/2.1.0:
