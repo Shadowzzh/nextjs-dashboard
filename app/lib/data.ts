@@ -11,7 +11,9 @@ import {
 } from './definitions';
 import { formatCurrency } from './utils';
 
+/** 获取最近收入 */
 export async function fetchRevenue() {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   // Add noStore() here to prevent the response from being cached.
   noStore();
   // This is equivalent to in fetch(..., {cache: 'no-store'}).
@@ -33,6 +35,7 @@ export async function fetchRevenue() {
   }
 }
 
+/** 获取最新的发票 */
 export async function fetchLatestInvoices() {
   noStore();
 
@@ -100,6 +103,8 @@ export async function fetchFilteredInvoices(
   currentPage: number,
 ) {
   noStore();
+
+  await new Promise((resolve) => setTimeout(resolve, 50000));
 
   const offset = (currentPage - 1) * ITEMS_PER_PAGE;
 
