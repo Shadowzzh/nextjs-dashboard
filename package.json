@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "lint": "next lint & tsc --noEmit",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@mdx-js/loader": "^3.0.1",
+    "@next-devtools/core": "^0.2.0",
+    "@next/mdx": "^14.2.3",
     "@radix-ui/react-avatar": "^1.0.4",
     "@tailwindcss/forms": "^0.5.7",
     "@tanstack/react-table": "^8.17.3",
