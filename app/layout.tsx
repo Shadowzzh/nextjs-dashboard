@@ -1,6 +1,7 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 import { cn } from '@/lib/utils';
+import { NextDevtoolsProvider } from '@next-devtools/core';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -25,7 +26,7 @@ export default function RootLayout({
           inter.variable,
         )}
       >
-        {children}
+        <NextDevtoolsProvider>{children}</NextDevtoolsProvider>
       </body>
       {/* <body className={`${inter.className} antialiased`}>{children}</body> */}
     </html>
