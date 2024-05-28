@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import("eslint").Linter.Config} */
+const config = {
   parser: '@typescript-eslint/parser',
   extends: [
     'plugin:@typescript-eslint/recommended',
@@ -14,4 +15,17 @@ module.exports = {
       },
     ],
   },
+  ignorePatterns: [
+    '**/.eslintrc.js',
+    '**/*.config.js',
+    '**/*.config.cjs',
+    '.next',
+    'dist',
+    'pnpm-lock.yaml',
+    'bun.lockb',
+    'tailwind.config.ts',
+    'node_modules',
+  ],
 };
+
+module.exports = config;
